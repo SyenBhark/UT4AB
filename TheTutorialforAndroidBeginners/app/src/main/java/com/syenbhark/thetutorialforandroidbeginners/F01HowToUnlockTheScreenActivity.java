@@ -1,14 +1,21 @@
 package com.syenbhark.thetutorialforandroidbeginners;
 
-import android.app.admin.DevicePolicyManager;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Vibrator;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.os.Vibrator;
 import android.widget.Toast;
+import android.text.Spanned;
+import android.graphics.Color;
+import android.content.Intent;
+import android.content.Context;
+import android.text.SpannableString;
+import android.content.ComponentName;
+import android.text.style.RelativeSizeSpan;
+import android.text.SpannableStringBuilder;
+import android.app.admin.DevicePolicyManager;
+import android.text.style.ForegroundColorSpan;
+import android.support.v7.app.AppCompatActivity;
+
 
 /**
  * Teaches how to unlock the screen by showing the simulation video and allow you to try it out.
@@ -102,4 +109,16 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
             isResumedAfterTryingItOut = true;
         }
     }
+
+    public SpannableStringBuilder sizeUpSubString(String string, String color) {
+
+        int flag = Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
+
+        SpannableString s = new SpannableString(string);
+        s.setSpan(new RelativeSizeSpan(0.7f), 35, string.length(), flag);
+        s.setSpan(new ForegroundColorSpan(Color.parseColor(color)), 0, string.length(), flag);
+
+        return new SpannableStringBuilder().append(s);
+    }
+
 }
