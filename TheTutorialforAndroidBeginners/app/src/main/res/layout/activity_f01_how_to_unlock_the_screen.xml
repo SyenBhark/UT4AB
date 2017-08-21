@@ -26,6 +26,7 @@
             android:text="@string/F01HowToUnlockTheScreenActivity_textView_contents" />
 
         <TextView
+            android:id="@+id/textView_permission_notice"
             style="@style/TextViewTemplate"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"

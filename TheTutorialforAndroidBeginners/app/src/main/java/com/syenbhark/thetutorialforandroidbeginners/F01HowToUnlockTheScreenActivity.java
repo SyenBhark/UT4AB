@@ -7,6 +7,7 @@ import android.widget.Toast;
 import android.text.Spanned;
 import android.graphics.Color;
 import android.content.Intent;
+import android.widget.TextView;
 import android.content.Context;
 import android.text.SpannableString;
 import android.content.ComponentName;
@@ -26,12 +27,13 @@ import android.support.v7.app.AppCompatActivity;
 
 public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
 
+    private TextView notice;
+    private Vibrator vibrator;
+    private boolean didUnlockTheScreen;
+    private ComponentName mComponentName;
+    private boolean isResumedAfterTryingItOut;
     private static final int ADMIN_INTENT = 15;
     private DevicePolicyManager mDevicePolicyManager;
-    private ComponentName mComponentName;
-    private boolean didUnlockTheScreen;
-    private boolean isResumedAfterTryingItOut;
-    private Vibrator vibrator;
 
     /**
      * Initializes a device manager, a component to lock screen and a flag boolean variable.
@@ -42,14 +44,16 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_f01_how_to_unlock_the_screen);
 
-        mDevicePolicyManager = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
-        mComponentName = new ComponentName(this, F01MyAdminReceiver.class);
         didUnlockTheScreen = false;
         isResumedAfterTryingItOut = false;
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-
+        notice = (TextView) findViewById(R.id.textView_permission_notice);
+        mComponentName = new ComponentName(this, F01MyAdminReceiver.class);
+        mDevicePolicyManager = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+        notice.setText(sizeUpSubString(getResources().getString(R.string.F01HowToUnlockTheScreenActivity_textView_notice), "#E53935"));
     }
 
     /**
@@ -110,6 +114,11 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param string Target string
+     * @param color  Color
+     * @return a string with a resized substring
+     */
     public SpannableStringBuilder sizeUpSubString(String string, String color) {
 
         int flag = Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
