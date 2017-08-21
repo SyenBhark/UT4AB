@@ -10,6 +10,7 @@
 
     <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">Unlock the basic screen</string>
     <string name="F01HowToUnlockTheScreenActivity_textView_contents">\tIf your screen is turned off, but the device\'s power is not off, press the hold key to turn it on. After that, press and drag the lock to the unlock. If there is nothing, just drag the screen to anywhere. \n\tHere is the simulation video that is one of the ways, when you cannot understand that.\n\tAnyway, how about trying it out? It works after activating device administrator.</string>
+    <string name="F01HowToUnlockTheScreenActivity_textView_notice">The Device Administrator permission is required to make the device lock immediately to let you try doing unlock the phone.</string>>
     <string name="F01HowToUnlockTheScreenActivity_button_startVideo">See the simulation</string>
     <string name="F01HowToUnlockTheScreenActivity_button_trySimulation">Try it out!</string>
     <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">Not Registered as the admin!</string>
