@@ -1,5 +1,7 @@
 package com.syenbhark.thetutorialforandroidbeginners;
 
+import java.util.Locale;
+
 import android.os.Bundle;
 import android.view.View;
 import android.os.Vibrator;
@@ -122,9 +124,10 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
     public SpannableStringBuilder sizeUpSubString(String string, String color) {
 
         int flag = Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
-
         SpannableString s = new SpannableString(string);
-        s.setSpan(new RelativeSizeSpan(0.7f), 35, string.length(), flag);
+        int index = Locale.getDefault().getLanguage().compareTo("ko") == 0 ? 9 : 35;
+
+        s.setSpan(new RelativeSizeSpan(0.7f), index, string.length(), flag);
         s.setSpan(new ForegroundColorSpan(Color.parseColor(color)), 0, string.length(), flag);
 
         return new SpannableStringBuilder().append(s);
