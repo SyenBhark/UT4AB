@@ -22,9 +22,14 @@
 
         <TextView
             style="@style/TextViewTemplate"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/F01HowToUnlockTheScreenActivity_textView_contents" />
+
+        <TextView
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F01HowToUnlockTheScreenActivity_textView_notice" />
 
         <RelativeLayout
             android:layout_width="match_parent"
