@@ -10,6 +10,7 @@
 
     <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">잠긴 화면 열기</string>
     <string name="F01HowToUnlockTheScreenActivity_textView_contents">\t기계는 끄지 않았지만 화면이 꺼져있을 때가 화면이 잠긴거에요. 키려면 홀드키를 누르세요. 그 후, 자물쇠를 열린 자물쇠까지 끌어다 놓으세요. 아무 것도 없다면, 그냥 화면을 아무데나 끌어보세요! \n\t이해가 안 된다면 대표적으로 여는 방법 중 하나인 이 시뮬레이션 비디오를 보세요. \n\t그럼, 한 번 직접 해보는 건 어때요? 장치 관리자를 활성화 시킨 후에 하실 수 있어요.</string>
+    <string name="F01HowToUnlockTheScreenActivity_textView_notice">기기 관리자 권한이 요구됩니다. 이는 \'직접 해보기\' 버튼을 누르는 즉시 요청될 것이며 사용자가 직접 홀드화면을 열어볼 수 있도록 화면을 잠그기 위해 요구되는 권한입니다. 이 앱을 지우기위해서는 해당 권한을 다시 되돌려야 합니다 즉 다시 비활성화 시켜야 하며, 이는 기계에서 설정 -> 보안 -> 기기 관리자 에서 이 앱을 체크해제해서 할 수 있습니다.  </string>
     <string name="F01HowToUnlockTheScreenActivity_button_startVideo">시뮬레이션 보기</string>
     <string name="F01HowToUnlockTheScreenActivity_button_trySimulation">직접 해보기</string>
     <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">관라지로 등록되지 않았습니다!</string>
