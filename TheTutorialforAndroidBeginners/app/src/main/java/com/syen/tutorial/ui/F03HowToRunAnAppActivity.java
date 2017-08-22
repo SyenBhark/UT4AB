@@ -19,12 +19,13 @@ import android.widget.Toast;
  * @author Syen
  */
 public class F03HowToRunAnAppActivity extends AppCompatActivity {
-    private boolean didYouRunTheApp;
-    private Button button_lanchApp;
-    private TextView textView_hiddenTextViews;
-    private ScrollView scrollView;
+
     private Toast toast;
     private Vibrator vibrator;
+    private ScrollView scrollView;
+    private Button button_lanchApp;
+    private boolean didYouRunTheApp;
+    private TextView textView_hiddenTextViews;
 
     /**
      * Initializes every stuff and set onClickListener and onLongClickListener on the app button

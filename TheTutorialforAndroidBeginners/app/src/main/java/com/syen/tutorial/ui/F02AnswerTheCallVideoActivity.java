@@ -80,6 +80,7 @@ public class F02AnswerTheCallVideoActivity extends AppCompatActivity {
      */
     @Override
     public void onStop() {
+
         super.onStop();
         ringtone.stop();
         finish();

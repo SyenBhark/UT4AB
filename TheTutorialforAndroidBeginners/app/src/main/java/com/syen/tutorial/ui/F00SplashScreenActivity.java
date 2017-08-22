@@ -27,6 +27,7 @@ public class F00SplashScreenActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+
                 // This method will be executed once the timer is over
                 // Start your app main activity
                 Intent i = new Intent(F00SplashScreenActivity.this, F00MainActivity.class);

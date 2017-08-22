@@ -23,6 +23,7 @@ public class F00MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_f00_main);
     }
@@ -33,6 +34,7 @@ public class F00MainActivity extends AppCompatActivity {
      * @param view of a clicked object(button).
      */
     public void switchActivityOnClick(View view) {
+
         // gets Id of clicked view.
         int viewId = view.getId();
 
@@ -44,6 +46,11 @@ public class F00MainActivity extends AppCompatActivity {
         Class goToActivity = null;
 
         // Puts the target activity into goToActivity.
+        switch (viewId){
+
+            case R.id.button_goTo_HowToUnlockTheScreenActivity:
+        }
+
         if (viewId == R.id.button_goTo_HowToUnlockTheScreenActivity) {
             // 01. How to unlock the screen?
             goToActivity = F01HowToUnlockTheScreenActivity.class;
@@ -63,6 +70,7 @@ public class F00MainActivity extends AppCompatActivity {
 
         // Starts the target activity.
         if (goToActivity != null) {
+
             startActivity(new Intent(F00MainActivity.this, goToActivity));
         }
     }

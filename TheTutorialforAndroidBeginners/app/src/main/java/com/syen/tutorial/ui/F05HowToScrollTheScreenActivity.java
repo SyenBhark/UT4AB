@@ -19,9 +19,9 @@ import android.widget.Toast;
  */
 
 public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
-    private EditText editText_scroll;
-    private Vibrator vibrator;
     private Toast toast;
+    private Vibrator vibrator;
+    private EditText editText_scroll;
 
     /**
      * Initialize stuff and get the input text from the EditText and checks it.
