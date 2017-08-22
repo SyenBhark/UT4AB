@@ -1,4 +1,4 @@
-package com.syenbhark.thetutorialforandroidbeginners;
+package com.syen.tutorial.ui;
 
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -80,6 +80,7 @@ public class F02AnswerTheCallVideoActivity extends AppCompatActivity {
      */
     @Override
     public void onStop() {
+
         super.onStop();
         ringtone.stop();
         finish();

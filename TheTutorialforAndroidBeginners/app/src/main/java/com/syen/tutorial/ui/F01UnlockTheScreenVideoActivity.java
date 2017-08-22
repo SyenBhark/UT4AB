@@ -1,5 +1,4 @@
-package com.syenbhark.thetutorialforandroidbeginners;
-
+package com.syen.tutorial.ui;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,12 +7,11 @@ import android.view.WindowManager;
 import android.widget.VideoView;
 
 /**
- * Shows the simulation video to get the answer, typing in 'Android'.
+ * Shows the simulation video which is one of common ways to unlock the screen.
  *
  * @author Syen
  */
-public class F04CursorPointerVideoActivity extends AppCompatActivity {
-
+public class F01UnlockTheScreenVideoActivity extends AppCompatActivity {
     /**
      * Plays the simulation video with removing its action bar and title bar.
      *
@@ -22,23 +20,23 @@ public class F04CursorPointerVideoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_f04_cursor_pointer_video);
+        setContentView(R.layout.activity_f01_unlock_the_screen_video);
 
         // Makes it full screen.
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        // Hides the action bar.
         getSupportActionBar().hide();
 
-        // Gets the answer video and plays it.
-        VideoView video = (VideoView) findViewById(R.id.videoView_cursor);
-        video.setVideoURI(Uri.parse(getString(R.string.uri_prefix) + R.raw.tutorial));
+        // Gets unlock video and plays it.
+        VideoView video = (VideoView) findViewById(R.id.videoView_unlock);
+        video.setVideoURI(Uri.parse(getString(R.string.uri_prefix) + R.raw.unlock));
         video.requestFocus();
         video.start();
 
         // After watching it, finishes the activity.
         new Handler().postDelayed(new Runnable() {
-
-
             @Override
             public void run() {
                 // close this activity

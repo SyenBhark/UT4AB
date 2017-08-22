@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.syenbhark.thetutorialforandroidbeginners.F04CursorPointerVideoActivity">
+    tools:context="com.syen.tutorial.ui.F04CursorPointerVideoActivity">
 
     <VideoView
         android:id="@+id/videoView_cursor"

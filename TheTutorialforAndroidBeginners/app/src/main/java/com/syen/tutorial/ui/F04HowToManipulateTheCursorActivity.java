@@ -1,4 +1,4 @@
-package com.syenbhark.thetutorialforandroidbeginners;
+package com.syen.tutorial.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,13 +26,13 @@ import android.widget.Toast;
 
 public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
 
-    private boolean isPassedDoneKey;
-    private TextView textView;
-    private EditText editText;
-    private ImageView imageView;
     private Toast toast;
     private Button button;
     private Vibrator vibrator;
+    private TextView textView;
+    private EditText editText;
+    private ImageView imageView;
+    private boolean isPassedDoneKey;
 
     /**
      * Initializes every stuff and set EditorActionListener on the EditText
@@ -89,6 +89,7 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             // Flags you pressed the done key.
                             isPassedDoneKey = true;
                         } else {    // When you type in a wrong word, alerts that.
+
                             toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_wrong01), Toast.LENGTH_SHORT);
                             toast.show();
                         }

@@ -15,6 +15,8 @@
     <string name="F01HowToUnlockTheScreenActivity_button_trySimulation">직접 해보기</string>
     <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">관라지로 등록되지 않았습니다!</string>
     <string name="F01HowToUnlockTheScreenActivity_toast_complete">첫 번째 수업을 성공적으로 마쳤어요!</string>
+    <string name="description">Some Description About Your Admin</string>
+    <string name="uri_prefix">android.resource://com.syen.tutorial.ui/</string>
 
     <string name="F02HowToAnswerTheIncomingCallActivity_textView_subtitle">전화를 받아봐요!</string>
     <string name="F02HowToAnswerTheIncomingCallActivity_textView_contents">\t기계마다 전화 받는 방법이 다양하지만, 보통 직관적으로 알 수 있어요. 초록이나 파랑색 전화기 모양을 보면, 한 번 눌러보거나 중간으로 끌어보세요. 하얀 색이라면, 초록색 전화기모양으로 끌어놓으세요. \n\t여기 전화받는 가장 흔한 방법 중 하나의 시뮬레이션 비디오가 있어요. \n\t그럼, 다른 사람에게 전화해달라고 한 번 해보세요! 성공하시면 좋겠어요! 성공했으면 박스를 체크하고 메인으로 돌아가주세요!</string>
