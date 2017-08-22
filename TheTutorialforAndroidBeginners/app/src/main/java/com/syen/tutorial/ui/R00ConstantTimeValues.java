@@ -1,4 +1,4 @@
-package com.syenbhark.thetutorialforandroidbeginners;
+package com.syen.tutorial.ui;
 
 /**
  * Created by Seoyoung on 10/13/15.

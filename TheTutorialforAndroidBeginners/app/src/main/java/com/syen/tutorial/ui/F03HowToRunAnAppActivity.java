@@ -1,4 +1,4 @@
-package com.syenbhark.thetutorialforandroidbeginners;
+package com.syen.tutorial.ui;
 
 import android.content.ClipData;
 import android.content.Context;

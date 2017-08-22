@@ -16,7 +16,7 @@
     <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">Not Registered as the admin!</string>
     <string name="F01HowToUnlockTheScreenActivity_toast_complete">Complete the first lesson!</string>
     <string name="description">Some Description About Your Admin</string>
-    <string name="uri_prefix">android.resource://com.syenbhark.thetutorialforandroidbeginners/</string>
+    <string name="uri_prefix">android.resource://com.syen.tutorial.ui/</string>
 
     <string name="F02HowToAnswerTheIncomingCallActivity_textView_subtitle">Gets the incoming call!</string>
     <string name="F02HowToAnswerTheIncomingCallActivity_textView_contents">\tThere are many ways to get the incoming call, but I hope you to do that intuitively. When you see the (green or blue) phone shape, try just clicking or dragging it to center. If the shape is white, drag it to green one. \n\tHere is the simulation video of the most common way to get the incoming call.\n\tThen, how about asking anyone to call your phone and try to take it? Expecting you to get it! If you did, please check the box!</string>

@@ -6,7 +6,7 @@
     android:layout_centerVertical="true"
     android:orientation="vertical"
     android:paddingTop="16dp"
-    tools:context=".MainActivity">
+    tools:context="com.syen.tutorial.ui.F00MainActivity">
 
     <Button
         android:id="@+id/button_goTo_HowToUnlockTheScreenActivity"

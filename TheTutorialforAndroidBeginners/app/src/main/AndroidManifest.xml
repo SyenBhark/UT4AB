@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.syenbhark.thetutorialforandroidbeginners"
+    package="com.syen.tutorial.ui"
     android:versionCode="2"
     android:versionName="1.1.1">
 
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".F00SplashScreenActivity"
+            android:name="com.syen.tutorial.ui.F00SplashScreenActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
@@ -23,10 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".F00MainActivity" />
+        <activity android:name="com.syen.tutorial.ui.F00MainActivity" />
 
         <receiver
-            android:name=".F01MyAdminReceiver"
+            android:name="com.syen.tutorial.ui.F01MyAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data
                 android:name="android.app.device_admin"
@@ -38,33 +38,33 @@
         </receiver>
 
         <activity
-            android:name=".F01HowToUnlockTheScreenActivity"
+            android:name="com.syen.tutorial.ui.F01HowToUnlockTheScreenActivity"
             android:label="@string/goTo_HowToUnlockTheScreenActivity"></activity>
         <activity
-            android:name=".F02HowToAnswerTheIncomingCallActivity"
+            android:name="com.syen.tutorial.ui.F02HowToAnswerTheIncomingCallActivity"
             android:label="@string/goTo_HowToAnswerTheIncomingCallActivity" />
         <activity
-            android:name=".F03HowToRunAnAppActivity"
+            android:name="com.syen.tutorial.ui.F03HowToRunAnAppActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/goTo_HowToRunAnApp" />
         <activity
-            android:name=".F04HowToManipulateTheCursorActivity"
+            android:name="com.syen.tutorial.ui.F04HowToManipulateTheCursorActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/goTo_HowToManipulateTheCursor"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".F05HowToScrollTheScreenActivity"
+            android:name="com.syen.tutorial.ui.F05HowToScrollTheScreenActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/goTo_HowToScrollTheScreenActivity"
             android:windowSoftInputMode="adjustPan"/>
         <activity
-            android:name=".F04CursorPointerVideoActivity"
+            android:name="com.syen.tutorial.ui.F04CursorPointerVideoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".F01UnlockTheScreenVideoActivity"
+            android:name="com.syen.tutorial.ui.F01UnlockTheScreenVideoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".F02AnswerTheCallVideoActivity"
+            android:name="com.syen.tutorial.ui.F02AnswerTheCallVideoActivity"
             android:screenOrientation="portrait" />
     </application>
 
